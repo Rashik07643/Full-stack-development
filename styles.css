@@ -66,22 +66,19 @@ section:hover {
 }
 
 #about img {
+    width: 260px;
+    height: auto;
     display: block;
     margin: 0 auto 20px;
     border-radius: 12px;
+    object-fit: cover;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    max-width: 100%;
-    height: auto;
 }
 
 img {
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05);
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-card {
@@ -100,14 +97,12 @@ img:hover {
 }
 
 .project-card img {
-    border-radius: 8px;
-    margin-bottom: 15px;
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 15px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card img:hover {
-    transform: scale(1.05);
 }
 
 form {
@@ -165,7 +160,9 @@ footer {
     form {
         width: 100%;
     }
-    .project-card {
-        margin: 15px 0;
+
+    .project-card img {
+        width: 100%;
+        height: auto;
     }
 }
