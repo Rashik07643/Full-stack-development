@@ -32,6 +32,25 @@ nav ul {
     max-width: 500px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between; /* pushes logo left, links right */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
 nav a {
     color: #fff;
     text-decoration: none;
